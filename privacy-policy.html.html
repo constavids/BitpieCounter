@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy - BitpieCounter</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1c1c1c, #0d0d0d);
+      margin: 0;
+      padding: 0;
+      color: #eee;
+    }
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 960px;
+      width: 100%;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+      animation: fadeIn 0.7s ease-in-out;
+    }
+    h1, h2 {
+      color: #fff;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      border-bottom: 2px solid rgba(255,255,255,0.2);
+      padding-bottom: 10px;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 28px;
+    }
+    p, li {
+      color: #f5f5f5;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+      background: rgba(255,255,255,0.06);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 14px;
+      text-align: left;
+      color: #eee;
+    }
+    th {
+      background: rgba(255,255,255,0.15);
+      font-weight: bold;
+    }
+    a { color: #6ec1ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p><strong>Last Updated:</strong> September 2025</p>
+
+      <h2>Overview</h2>
+      <p>
+        <b>BitpieCounter</b> is a Chrome extension designed to provide fast, secure,
+        and convenient utilities like JSON formatting and CSV conversion.
+        We do not collect, sell, or share any personal data.
+        All operations happen locally in your browser.
+      </p>
+
+      <h2>Data Collection</h2>
+      <p><b>We do not collect or transmit any personal information.</b></p>
+      <ul>
+        <li>No personal identifiers (name, email, etc.)</li>
+        <li>No browsing history or keystrokes</li>
+        <li>No analytics, ads, or trackers</li>
+      </ul>
+      <p>
+        Any text you process using this extension stays on your device.
+        If you copy results, they are placed only on your system clipboard.
+      </p>
+
+      <h2>Permissions</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Why It’s Required</th>
+            <th>What It Does Not Do</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>host_permissions</code><br>https://firestore.googleapis.com/*</td>
+            <td>
+              Used to fetch a <b>read-only JSON configuration file</b> from our Firebase project.  
+              This file contains simple settings (e.g., whether to show built-in tools or open a webpage).  
+              It allows us to update options without requiring users to reinstall the extension.
+            </td>
+            <td>
+              ❌ Does not access user data or websites<br>
+              ❌ No tracking, ads, or analytics<br>
+              ✅ Only retrieves a safe static JSON file<br>
+              ✅ No remote JavaScript is executed
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Third-Party Content</h2>
+      <p>
+        In some cases, the extension may open or embed our official site
+        (<a href="https://constavids.github.io/BitpieCounter/" target="_blank">constavids.github.io/BitpieCounter/</a>).
+        That website may have its own policies regarding cookies or logs.
+      </p>
+
+      <h2>For Chrome Web Store Reviewers</h2>
+      <p>
+        - No personal or browsing data is collected. <br>
+        - Firebase is only used to fetch static JSON configuration. <br>
+        - The extension never executes remote code. <br>
+        - Permission scope is minimal and necessary only for configuration.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        For questions or concerns, please contact us:  
+        📧 <a href="mailto:constavids@gmail.com">constavids@gmail.com</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
